@@ -6,6 +6,37 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+section {
+    box-sizing: border-box;
+    border: dotted 1px #CCC;
+    padding: 10px 0 10px 0;
+    display: inline-block;
+    width:300px;
+    /*
+    Alternative syntax:
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    */
+    margin: 10px;
+    /*
+    Alternative syntax:
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    */
+}
+img{
+  width:100%;
+  padding: 5px 0 5px 0 ;
+
+}
+main{
+  display: flex;
+}
+
 /*
 Add some style blocks below this line to style the cards.
 Feel free to borrow from Exercise 1.
@@ -14,11 +45,25 @@ Feel free to borrow from Exercise 1.
 
 /* Tablet Media Query */
 @media only screen and (max-width: 1000px) {
-
+main{
+  display: flex;
+  flex-wrap: wrap;
+}
+section{
+  width:calc(50% - 20px);
+}
 }
 
 /* Mobile Phone Media Query */
 @media only screen and (max-width: 600px) {
+  main{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  section{
+    width:100%;
+  }
+  }
 
-    
+
 }
