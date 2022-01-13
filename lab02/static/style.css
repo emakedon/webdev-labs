@@ -9,7 +9,7 @@ body {
 
 header {
     padding: 3vh;
-    background: rgb(156, 41, 41);
+    background: #EEE;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,15 +27,6 @@ main {
     margin: 3vh;
 }
 
-.page-section {
-    box-sizing: border-box;
-    border: dotted 2px rgb(131, 61, 61);
-    padding: 10px 0 10px 0;
-    display: inline-block;
-    width:300px;
-    margin: 10px;
-}
-
 
 @media only screen and (max-width: 1000px) {
     /* Media queries go here */
@@ -43,4 +34,19 @@ main {
 
 @media only screen and (max-width: 600px) {
     /* Media queries go here */
+}
+.page-section {
+    box-sizing: border-box;
+    border: solid 2px rgb(178, 173, 173);
+    padding: 10px 0 10px 0;
+    display: inline-block;
+    width:300px;
+    margin: 10px;
+}
+.image{
+  width:100%;
+  padding: 5px 0 5px 0 ;
+}
+.page-section > p{
+    border-top: solid 1px rgb(203, 202, 202);
 }
